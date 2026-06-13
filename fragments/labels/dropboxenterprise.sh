@@ -2,7 +2,7 @@ dropboxenterprise)
     name="Dropbox Enterprise"
     appName="Dropbox.app"
     type="pkg"
-    # Handling differens on Apple Silicon and Intel arch
+    # Handling differences on Apple Silicon and Intel arch
     if [[ $(arch) = "arm64" ]]; then
         printlog "Architecture: arm64"
         downloadURL="https://client.dropbox.com/desktop/desktop-dropbox/requestdownload?install_type=enterprise_install&platform=mac&arch=arm64"

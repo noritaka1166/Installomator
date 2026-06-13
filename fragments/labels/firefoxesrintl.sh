@@ -1,7 +1,7 @@
 firefoxesrintl|\
 firefoxesrpkgintl)
     # This label will try to figure out the selected language of the user,
-    # and install corrosponding version of Firefox ESR
+    # and install corresponding version of Firefox ESR
     name="Firefox"
     type="pkg"
     userLanguage=$(runAsUser defaults read .GlobalPreferences AppleLocale | tr '_' '-')

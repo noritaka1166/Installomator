@@ -1,7 +1,7 @@
 dropbox)
     name="Dropbox"
     type="dmg"
-    # Handling differens on Apple Silicon and Intel arch
+    # Handling differences on Apple Silicon and Intel arch
     if [[ $(arch) = "arm64" ]]; then
         printlog "Architecture: arm64"
         downloadURL="https://www.dropbox.com/download?plat=mac&full=1&arch=arm64"

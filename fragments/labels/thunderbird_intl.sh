@@ -1,6 +1,6 @@
 thunderbird_intl)
     # This label will try to figure out the selected language of the user,
-    # and install corrosponding version of Thunderbird
+    # and install corresponding version of Thunderbird
     name="Thunderbird"
     type="dmg"
     userLanguage=$(if [ -e "/Applications/${name}.app/Contents/Resources/locale.ini" ]; then tail -1 "/Applications/${name}.app/Contents/Resources/locale.ini" | grep "locale=" | awk -F'=' '{ print $2 }'; else runAsUser defaults read .GlobalPreferences AppleLocale | tr '_' '-'; fi)

@@ -1,6 +1,6 @@
 firefox_intl)
     # This label will try to figure out the selected language of the user,
-    # and install corrosponding version of Firefox
+    # and install corresponding version of Firefox
     name="Firefox"
     type="dmg"
     userLanguage=$(runAsUser defaults read .GlobalPreferences AppleLocale | tr '_' '-')

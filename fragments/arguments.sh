@@ -92,7 +92,7 @@ else
     mdmURL="Unknown"
 fi
 
-# Generate a session key for this run, this is useful to idenify streams when we're centrally logging.
+# Generate a session key for this run, this is useful to identify streams when we're centrally logging.
 SESSION=$RANDOM
 
 # MARK: START

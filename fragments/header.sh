@@ -208,7 +208,7 @@ NOTIFY_DIALOG=0
 # - packageID: (optional)
 #   The package ID of a pkg
 #   If given, will be used to find the version of installed software, instead of searching for an app.
-#   Usefull if a pkg does not install an app.
+#   Useful if a pkg does not install an app.
 #   See label installomator_st
 #
 # - downloadURL: (required)

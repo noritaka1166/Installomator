@@ -128,7 +128,7 @@ printlog(){
     fi
 }
 
-# Used to remove dupplicate lines in large log output,
+# Used to remove duplicate lines in large log output,
 # for example from msupdate command after it finishes running.
 deduplicatelogs() {
     loginput=${1:-"Log"}
@@ -284,7 +284,7 @@ getAppVersion() {
         if [[ ${#filteredAppPaths} -eq 1 ]]; then
             installedAppPath=$filteredAppPaths[1]
             #appversion=$(mdls -name kMDItemVersion -raw $installedAppPath )
-            appversion=$(defaults read $installedAppPath/Contents/Info.plist $versionKey) #Not dependant on Spotlight indexing
+            appversion=$(defaults read $installedAppPath/Contents/Info.plist $versionKey) #Not dependent on Spotlight indexing
             printlog "found app at $installedAppPath, version $appversion, on versionKey $versionKey"
             updateDetected="YES"
             # Is current app from App Store
@@ -585,7 +585,7 @@ installAppWithPath() { # $1: path to app to install in $targetDir $2: path to fo
         if [ $CLIstatus -ne 0 ] ; then
             cleanupAndExit 16 "Error installing $mountname/$CLIInstaller $CLIArguments error:\n$logoutput" ERROR
         else
-            printlog "Succesfully ran $mountname/$CLIInstaller $CLIArguments" INFO
+            printlog "Successfully ran $mountname/$CLIInstaller $CLIArguments" INFO
         fi
         printlog "Debugging enabled, update tool output was:\n$logoutput" DEBUG
     fi
